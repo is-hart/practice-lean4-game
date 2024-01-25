@@ -25,7 +25,9 @@ an impossible goal."
 
 /- Use these commands to add items to the game's inventory. -/
 
-/-- use use use --/
+/-- When given a "there exists" statement, use the use command to use a specific value.
+Because of the nature of ∃ statements, if one value works the statement is true.
+Remember that even and odd are existance statements in disguise! --/
 
 TacticDoc use
 NewTactic use

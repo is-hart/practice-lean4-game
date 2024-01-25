@@ -1,6 +1,8 @@
+import Game.Metadata
+
+import Game.Levels.Tutorial
 import Game.Levels.EvenOdd
 import Game.Levels.ThreevenThrodd
-
 
 -- Here's what we'll put on the title screen
 Title "The Threeven Game"
