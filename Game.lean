@@ -1,26 +1,22 @@
-import Game.Levels.DemoWorld
+import Game.Levels.EvenOdd
+import Game.Levels.ThreevenThrodd
+
 
 -- Here's what we'll put on the title screen
-Title "Hello World Game"
+Title "The Threeven Game"
 Introduction
 "
-This text appears on the starting page where one selects the world/level to play.
-You can use markdown.
+You've heard of even and odd numbers, but have you met threeven, throver, and thrunder?
 "
 
 Info "
-Here you can put additional information about the game. It is accessible
-from the starting through the drop-down menu.
-
-For example: Game version, Credits, Link to Github and Zulip, etc.
-
-Use markdown.
+We made this game and it's dope
 "
 
 /-! Information to be displayed on the servers landing page. -/
 Languages "English"
-CaptionShort "Game Template"
-CaptionLong "You should use this game as a template for your own game and add your own levels."
+CaptionShort "The Threeven Game"
+CaptionLong "You should play this game bc its cool."
 -- Prerequisites "" -- add this if your game depends on other games
 -- CoverImage "images/cover.png"
 
