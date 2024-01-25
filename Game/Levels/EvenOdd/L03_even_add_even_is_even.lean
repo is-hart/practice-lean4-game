@@ -28,7 +28,7 @@ an impossible goal."
 
 TacticDoc rw
 
-/-- cases --/
+/-- cases! --/
 
 TacticDoc cases'
 
