@@ -14,14 +14,11 @@ To do this we type a left arrow before our theorem in rw. Type ← by typing '\\
 Try this out!
 "
 
-/-- practice --/
-TheoremDoc practice3 as "practice3" in "Don't Use These"
-
-Statement practice3 (a b c : Nat) (h : a + b + c = 3) : (a + (b + c) = 3) := by
+Statement (a b c : Nat) (h : a + b + c = 3) : (a + (b + c) = 3) := by
   rw [← Nat.add_assoc]
   exact h
 
-Conclusion "Good job!"
+Conclusion "Great. The rw tactic can also be used in an assumption h by typing rw [theorem] at h."
 
 /-- a + b + c = a + (b + c) --/
 TheoremDoc Nat.add_assoc as "Nat.add_assoc" in "Basic Arithmetic"

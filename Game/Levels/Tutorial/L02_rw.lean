@@ -13,10 +13,7 @@ Fix this by using the rw tactic. Type ''rw [Nat.add_comm]''.
 This will rewrite the equation using the commutative property of addition.
 Click on Nat.add_comm under theorems/basic arithmetic in your inventory for more info."
 
-/-- practice --/
-TheoremDoc practice2 as "practice2" in "Don't Use These"
-
-Statement practice2 (a b : Nat) (h : b + a = 5) : (a + b = 5) := by
+Statement (a b : Nat) (h : b + a = 5) : (a + b = 5) := by
   rw [Nat.add_comm]
   exact h
 
@@ -32,6 +29,6 @@ TacticDoc rw
 NewTactic rw
 
 /-- a + b = b + a --/
-TheoremDoc Nat.add_comm as "Nat.add_comm" in "Basic Arithmetic"
+TheoremDoc Nat.add_comm as "add_comm" in "Basic Arithmetic"
 NewTheorem Nat.add_comm
 -- NewDefinition Nat Add Eq

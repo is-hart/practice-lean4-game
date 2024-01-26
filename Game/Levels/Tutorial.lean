@@ -3,7 +3,8 @@ import Game.Metadata
 import Game.Levels.Tutorial.L01_exact
 import Game.Levels.Tutorial.L02_rw
 import Game.Levels.Tutorial.L03_rw_backwards
-import Game.Levels.Tutorial.L04_rw_assumption
+import Game.Levels.Tutorial.L04_left_right
+import Game.Levels.Tutorial.L05_ring_nf
 
 World "Tutorial"
 Title "Tutorial World"
