@@ -5,7 +5,7 @@ import Mathlib.Tactic
 World "ThreevenThrodd"
 Level 4
 
-Title "Multiplying threevens"
+Title "Multiplying thrunders"
 
 /-- thrunder * thrunder = Throver --/
 TheoremDoc mul_thrunders as "mul_thrunders" in "Threeven/Throdd"

@@ -40,8 +40,8 @@ TheoremDoc pow_two as "pow_two" in "Basic Arithmetic"
 TheoremDoc pow_three as "pow_three" in "Basic Arithmetic"
 /-- a - b - c = a - (b + c) -/
 TheoremDoc Nat.sub_sub as "Nat.sub_sub" in "Basic Arithmetic"
-  /-- a + 1 - 1 = a -/
-TheoremDoc Nat.add_one_sub_one as "Nat.add_one_sub_one" in "Basic Arithmetic"
+  /-- a + b - b = a -/
+TheoremDoc Nat.add_sub_cancel as "Nat.add_sub_cancel" in "Basic Arithmetic"
 
 NewTheorem Nat.mul_comm Nat.mul_assoc Nat.mul_sub_right_distrib Nat.mul_sub_left_distrib mul_one
-pow_two pow_three Nat.sub_sub Nat.add_one_sub_one
+pow_two pow_three Nat.sub_sub Nat.add_sub_cancel

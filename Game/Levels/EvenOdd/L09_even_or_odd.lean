@@ -31,7 +31,7 @@ This is what you want to prove, and you need to rewrite your goal to match it.
 
 I'll give you the first line of the proof to get you started:
 
-induction' a with d hd"
+{induction' a with d hd}"
 
 Statement even_or_odd (a : Nat) : (even a) ∨ (odd a) := by
   induction' a with d hd
@@ -52,7 +52,7 @@ Statement even_or_odd (a : Nat) : (even a) ∨ (odd a) := by
       cases' h2 with q2 h4
       rw [h4]
       use (q2 + 1)
-      rw [mul_add]
+      rw [Nat.mul_add]
     }
   }
 
@@ -60,51 +60,48 @@ Conclusion "Amazing job! Now all that stands between you and this game's namesak
 the final boss of this world.
 
 I'll give you my solution for this level so you can compare with yours:
+{
+induction' a with d hd
+{
+  left
+  exact zero_even
 
-Statement even_or_odd (a : Nat) : (even a) ∨ (odd a) := by
-
-  induction' a with d hd
-
+}
+{
+  cases' hd with h1 h2
   {
-
-    left
-
-    exact zero_even
-
+    right
+    cases' h1 with q h3
+    rw [h3]
+    use q
   }
-
   {
+    left
+    cases' h2 with q2 h4
+    rw [h4]
+    use (q2 + 1)
+    rw [mul_add]
+  }
+}
+}"
 
-    cases' hd with h1 h2
+/-- If n : ℕ is an object, and the goal mentions n, then {induction' n with d hd} attempts
+to prove the goal by induction on n, with the inductive variable in the successor case being d,
+and the inductive hypothesis being hd.
 
-    {
+Example:
 
-      right
+If the goal is
+{
+0 + n = n
+}
+then
 
-      cases' h1 with q h3
+{induction' n with d hd}
 
-      rw [h3]
+will turn it into two goals. The first is 0 + 0 = 0;
+the second has an assumption hd : 0 + d = d and goal 0 + succ d = succ d.
 
-      use q
-
-    }
-
-    {
-
-      left
-
-      cases' h2 with q2 h4
-
-      rw [h4]
-
-      use (q2 + 1)
-
-      rw [mul_add]
-
-    }
-
-  }"
-
-/-- More documentation coming soon! -/
+Note that you must prove the first goal before you can access the second one. -/
 TacticDoc induction'
 NewTactic induction'

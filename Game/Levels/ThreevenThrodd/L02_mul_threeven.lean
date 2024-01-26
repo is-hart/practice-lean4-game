@@ -1,5 +1,6 @@
 import Game.Metadata
 import Game.Levels.ThreevenThrodd.L01_threeven_zero
+import Mathlib.Tactic
 
 World "ThreevenThrodd"
 Level 2

@@ -8,7 +8,7 @@ Level 10
 Title "Even World Boss"
 
 Introduction "The boss approaches slowly. It seems you have just enough time to learn one last
-tactic before he reaches you.
+tactic before it reaches you.
 
 All of the even/odd theorems you've proved are implication theorems.
 This means one thing implies another. You can't use rewrite to use these theorems.

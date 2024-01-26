@@ -19,7 +19,7 @@ Statement sub_odds (a b : Nat) (h1 : odd a) (h2 : odd b) : even (a - b) := by
   use (n - m)
   ring_nf
   rw [← Nat.sub_sub]
-  rw [add_comm, Nat.add_one_sub_one, Nat.mul_sub_right_distrib]
+  rw [add_comm, Nat.add_sub_cancel, Nat.mul_sub_right_distrib]
 
 Conclusion "Alright, now you're ready for the sub-boss of this world,
 and once you beat it you can challenge the big boss!"
