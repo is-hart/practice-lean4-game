@@ -22,5 +22,5 @@ CaptionLong "You should play this game bc its cool."
 -- Prerequisites "" -- add this if your game depends on other games
 -- CoverImage "images/cover.png"
 
-/-! Build the game. Show's warnings if it found a problem with your game. -/
+/-! Build the game. Shows warnings if it found a problem with your game. -/
 MakeGame

@@ -30,6 +30,7 @@ Because of the nature of ∃ statements, if one value works the statement is tru
 Remember that even and odd are existance statements in disguise! --/
 
 TacticDoc use
+
 NewTactic use
 
 -- NewLemma Nat.add_comm Nat.add_assoc

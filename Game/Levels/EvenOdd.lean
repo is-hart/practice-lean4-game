@@ -1,5 +1,4 @@
-import Game.Levels.EvenOdd.L01_zero_even
-import Game.Levels.EvenOdd.L02_one_odd
+import Game.Levels.EvenOdd.L01_even_zero
 
 World "EvenOdd"
 Title "Even/Odd World"
