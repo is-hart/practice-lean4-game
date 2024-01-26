@@ -7,7 +7,7 @@ Title "First Steps"
 
 def threeven (a : Nat) := ∃ n : Nat, a = 3 * n
 def throver (a : Nat) := ∃ n : Nat, a = 3 * n + 1
-def thrunder (a : Nat) := ∃ n : Nat, a = 3 * n - 1
+def thrunder (a : Nat) := ∃ n : Nat, a = 3 * n + 2
 
 /-- Zero is threeven. --/
 TheoremDoc zero_threeven as "zero_threeven" in "Threeven/Throdd"
@@ -28,13 +28,19 @@ Conclusion "Awesome!"
 -- NewLemma Nat.add_comm Nat.add_assoc
 -- NewDefinition Nat Add Eq
 
-/-- Divisible by three --/
+/-- threeven (a : Nat) := ∃ n : Nat, a = 3 * n
+
+Divisible by three --/
 DefinitionDoc threeven as "threeven"
 
-/-- One more than multiple of three --/
+/-- throver (a : Nat) := ∃ n : Nat, a = 3 * n + 1
+
+One more than a multiple of three --/
 DefinitionDoc throver as "throver"
 
-/-- One less than multiple of three --/
-DefinitionDoc thrunder as "throver"
+/-- def thrunder (a : Nat) := ∃ n : Nat, a = 3 * n + 2
+
+Two more than a multiple of three --/
+DefinitionDoc thrunder as "thrunder"
 
 NewDefinition threeven throver thrunder
