@@ -75,11 +75,9 @@ theorem even_or_odd (a : Nat) : (even a) ∨ (odd a) := by
     {
       left
       cases' h2 with q2 h4
-      {
-        rw [h4]
-        use (q2 + 1)
-        rw [mul_add]
-      }
+      rw [h4]
+      use (q2 + 1)
+      rw [mul_add]
     }
   }
 
