@@ -22,7 +22,7 @@ For more information on natural numbers, play the natural number game."
 /- Use these commands to add items to the game's inventory. -/
 
 /-- Use exact to close a goal when it matches an assumption.
-Type "exact assumptionName" --/
+Type "exact assumptionName" -/
 
 TacticDoc exact
 NewTactic exact

@@ -6,14 +6,11 @@ Level 2
 
 Title "One is Odd"
 
-/-- one_odd : (odd 1)
-One is odd. --/
+/-- One is odd. -/
 TheoremDoc one_odd as "one_odd" in "Even/Odd"
 
 
-Introduction "Let's start off simple and show that the number zero is even.
-
-To do this, we need to find a number that doubles to make zero. We can use the ``use'' tactic to tell Lean to use that number. Try it out!"
+Introduction "Can you figure it out? Again, the definition of odd can help!"
 
 Statement one_odd : (odd 1) := by
   use 0

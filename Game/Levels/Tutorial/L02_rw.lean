@@ -23,12 +23,14 @@ Conclusion "Good job!"
 Following rw, type the theorem you'd like to use to rewrite the equation surrounded by square brackets.
 You may use several theorems separated by commas.
 You may type "repeat rw" followed by the theorem in square brackets to rewrite as many times as possible.
-You may type ← before any theorems to reverse the input and output.--/
+You may type ← before any theorems to reverse the input and output.-/
 
 TacticDoc rw
 NewTactic rw
 
-/-- a + b = b + a --/
-TheoremDoc Nat.add_comm as "add_comm" in "Basic Arithmetic"
+/-- a + b = b + a
+
+Commutative property of addition-/
+TheoremDoc Nat.add_comm as "Nat.add_comm" in "Basic Arithmetic"
 NewTheorem Nat.add_comm
 -- NewDefinition Nat Add Eq

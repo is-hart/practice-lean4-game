@@ -20,7 +20,9 @@ Statement (a b c : Nat) (h : a + b + c = 3) : (a + (b + c) = 3) := by
 
 Conclusion "Great. The rw tactic can also be used in an assumption h by typing rw [theorem] at h."
 
-/-- a + b + c = a + (b + c) --/
+/-- a + b + c = a + (b + c)
+
+Associative property of addition-/
 TheoremDoc Nat.add_assoc as "Nat.add_assoc" in "Basic Arithmetic"
 NewTheorem Nat.add_assoc
 -- NewDefinition Nat Add Eq

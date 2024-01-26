@@ -7,9 +7,8 @@ Level 4
 
 Title "Adding odd numbers"
 
-/-- add_odds (a b : Nat) (h1 : odd a) (h2 : odd b) : even (a + b)
-An odd number plus an odd number is an even number. --/
-TheoremDoc add_odds as "add_odds" in "Odd/Even"
+/--An odd number plus an odd number is an even number. -/
+TheoremDoc add_odds as "add_odds" in "Even/Odd"
 
 
 Introduction "We already added even numbers. Now let's add odd ones!
@@ -22,5 +21,3 @@ Statement add_odds (a b : Nat) (h1 : odd a) (h2 : odd b) : even (a + b) := by
   rw [hn, hm]
   use (n + m + 1)
   ring_nf
-
-Conclusion "Nice."

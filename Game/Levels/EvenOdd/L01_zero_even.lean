@@ -8,8 +8,7 @@ Title "Zero is Even"
 def even (a : Nat) := ∃ n : Nat, a = 2 * n
 def odd (a : Nat) := ∃ n : Nat, a = 2 * n + 1
 
-/-- zero_even : (even 0)
-Zero is even. --/
+/-- Zero is even. -/
 TheoremDoc zero_even as "zero_even" in "Even/Odd"
 
 
@@ -27,7 +26,7 @@ an impossible goal."
 
 /-- When given a "there exists" statement, use the use command to use a specific value.
 Because of the nature of ∃ statements, if one value works the statement is true.
-Remember that even and odd are existance statements in disguise! --/
+Remember that even and odd are existance statements in disguise! -/
 TacticDoc use
 NewTactic use
 
@@ -35,11 +34,13 @@ NewTactic use
 -- NewDefinition Nat Add Eq
 
 /-- odd (a : Nat) := ∃ n : Nat, a = 2 * n + 1
-If there exists a natural number n such that one more than 2 times n is a, then a is odd. --/
+
+If there exists a natural number n such that one more than 2 times n is a, then a is odd. -/
 DefinitionDoc odd as "odd"
 
 /-- even (a : Nat) := ∃ n : Nat, a = 2 * n
-If there exists a natural number n such that 2 times n is a, then a is even. --/
+
+If there exists a natural number n such that 2 times n is a, then a is even. -/
 DefinitionDoc even as "even"
 
 NewDefinition odd even

@@ -30,10 +30,10 @@ TacticDoc left
 
 NewTactic right left
 
-/-- a * (b + c) = a * b + a * c --/
+/-- a * (b + c) = a * b + a * c -/
 TheoremDoc Nat.mul_add as "Nat.mul_add" in "Basic Arithmetic"
 
-/-- (a + b) * c = a * c + b * c --/
+/-- (a + b) * c = a * c + b * c -/
 TheoremDoc Nat.add_mul as "Nat.add_mul" in "Basic Arithmetic"
 
 NewTheorem Nat.mul_add Nat.add_mul
